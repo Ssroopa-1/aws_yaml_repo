@@ -7,10 +7,10 @@
     apt: 
      name: apache2
      state: present 
-    when: ansible_os_family =="Debian" 
+  
 
-  - name: I want to install webserver on redhat
-    ansible.builtin.dnf:
+  - name: I want to start webserver on redhat
+    service:
       name: httpd
-      state: present  
-    when: ansible_os_family =="Redhat"   
+      state: started 
+    
