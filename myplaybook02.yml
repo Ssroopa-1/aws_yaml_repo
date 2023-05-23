@@ -14,3 +14,9 @@
       name: apache2
       state: started 
     when: ansible_os_family =="Debian"
+
+  - name: I want to install apache2 on ubuntu
+    apt: 
+     name: httpd
+     state: present 
+    when: ansible_os_family =="RedHat" 
