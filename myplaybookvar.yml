@@ -8,5 +8,5 @@
     myvar03: tree
   tasks:
   - name: i want to display var01
-    default:
+    debug:
        msg: "{{myvar01}}"
