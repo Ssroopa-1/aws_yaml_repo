@@ -3,9 +3,9 @@
   become: yes
   tasks:
   - include: myfile.yml
-  - name: install tree on ubuntu
+  - name: install apache2 on ubuntu
     apt:
-      name: tree
+      name: apache2
       state: present
 
   - name: copy index file into node side
