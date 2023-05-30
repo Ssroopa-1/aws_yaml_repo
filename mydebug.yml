@@ -15,11 +15,13 @@
     apt:
       name: git
       state: present
+    tags: mygit  
     when: myfirsttaskresult.stderr ==""
 
   - name: i want to install tree
     apt:
       name: tree
       state: present
+    tags: mytree  
     when: myfirsttaskresult.stderr !=""   
 
