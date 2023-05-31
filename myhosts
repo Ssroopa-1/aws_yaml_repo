@@ -3,6 +3,8 @@
 172.31.6.107
 172.31.27.210
 
+[myappservers]
+172.31.6.13
 
 [mywebservers:vars]
 mywebpackonubuntu= apache2
